@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_Bottom"
+        android:paddingLeft="@dimen/padding_Left"
+        android:paddingRight="@dimen/padding_Right"
+        tools:context="com.example.dina.androidquiz.MainActivity">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords" />
+
+
+        <LinearLayout
+            style="@style/mylayout"
+            android:background="@color/layout_background">
+
+            <TextView
+                style="@style/question"
+                android:maxLines="3"
+                android:text="@string/question_1"
+                android:textColor="@color/question" />
+
+            <RadioGroup
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q1_answer1"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/F_Layout"
+                    android:textColor="@color/answer_color" />
+
+                <RadioButton
+                    android:id="@+id/q1_answer2"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/L_Layout"
+                    android:textColor="@color/answer_color" />
+
+                <RadioButton
+                    android:id="@+id/q1_answer3"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/R_Layout"
+                    android:textColor="@color/answer_color" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mylayout"
+            android:background="@color/layout_background">
+
+            <TextView
+                style="@style/question"
+                android:maxLines="2"
+                android:text="@string/question_2"
+                android:textColor="@color/question" />
+
+            <RadioGroup
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q2_answer1"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/state_1"
+                    android:textColor="@color/answer_color" />
+
+                <RadioButton
+                    android:id="@+id/q2_answer2"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/state_2"
+                    android:textColor="@color/answer_color" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mylayout"
+            android:background="@color/layout_background">
+
+            <TextView
+                style="@style/question"
+                android:maxLines="2"
+                android:text="@string/question_3"
+                android:textColor="@color/question" />
+
+            <RadioGroup
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q3_answer1"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/F_Layout"
+                    android:textColor="@color/answer_color" />
+
+                <RadioButton
+                    android:id="@+id/q3_answer2"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/L_Layout"
+                    android:textColor="@color/answer_color" />
+
+                <RadioButton
+                    android:id="@+id/q3_answer3"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/R_Layout"
+                    android:textColor="@color/answer_color" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mylayout"
+            android:background="@color/layout_background">
+
+            <TextView
+                style="@style/question"
+                android:maxLines="2"
+                android:text="@string/question_4"
+                android:textColor="@color/question" />
+
+            <RadioGroup
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q4_answer1"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/state_1"
+                    android:textColor="@color/answer_color" />
+
+                <RadioButton
+                    android:id="@+id/q4_answer2"
+                    style="@style/myAnswerRButtton"
+                    android:hint="@string/state_2"
+                    android:textColor="@color/answer_color" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/mylayout"
+            android:background="@color/layout_background">
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question_5"
+                android:textColor="@color/question" />
+
+            <CheckBox
+                android:id="@+id/q5_answer1"
+                style="@style/myAnswerCButtton"
+                android:onClick="checkBoxManager"
+                android:text="@string/text_size" />
+
+            <CheckBox
+                android:id="@+id/q5_answer2"
+                style="@style/myAnswerCButtton"
+                android:onClick="checkBoxManager"
+                android:text="@string/height" />
+
+            <CheckBox
+                android:id="@+id/q5_answer3"
+                style="@style/myAnswerCButtton"
+                android:onClick="checkBoxManager"
+                android:text="@string/text_Appearance" />
+
+            <CheckBox
+                android:id="@+id/q5_answer4"
+                style="@style/myAnswerCButtton"
+                android:onClick="checkBoxManager"
+                android:text="@string/font" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mylayout"
+            android:background="@color/layout_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question6"
+                android:textColor="@color/question"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/answer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/answer6"
+                android:imeOptions="actionDone" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <Button
+                android:id="@+id/submit_button"
+                style="@style/myButton"
+                android:layout_alignParentLeft="true"
+                android:background="@color/button_color"
+                android:onClick="submitButton"
+                android:text="@string/button1" />
+
+            <Button
+                android:id="@+id/reset_button"
+                style="@style/myButton"
+                android:layout_alignParentRight="true"
+                android:background="@color/button_color"
+                android:onClick="resetButton"
+                android:text="@string/button2" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+

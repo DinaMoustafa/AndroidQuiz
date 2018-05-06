@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Android Quiz</string>
+    <string name="name">Type your name</string>
+    <string name="question_1">1.A layout where the positions of the children can be described in relation to each other or to the parent.</string>
+    <string name="question_2">2.id attribute is used to specify identifier name for a view.</string>
+    <string name="question_3">3.A layout that arranges its children into rows and columns.</string>
+    <string name="question_4">4.Vertical is the default value of the orientation attribute in Linear Layout.</string>
+    <string name="question_5">5.XML attribute which is responsible for determining the text size.(Select only two)</string>
+    <string name="R_Layout">Relative Layout</string>
+    <string name="L_Layout">Linear Layout</string>
+    <string name="F_Layout">Frame Layout</string>
+    <string name="state_1">true</string>
+    <string name="state_2">false</string>
+    <string name="text_size">android:textSize</string>
+    <string name="height">android:layout_height</string>
+    <string name="font">android:fontFamily</string>
+    <string name="text_Appearance">android:textAppearance</string>
+    <string name="message">you did not answer correct to all questions !</string>
+    <string name="trial">Start Quiz</string>
+    <string name="button1">Submit</string>
+    <string name="button2">Reset</string>
+    <string name="display_hey">Hey</string>
+    <string name="question6">6.Which programming Language are you using in Android Programming ?</string>
+    <string name="answer6">Type your answer</string>
+    <string name="programming_language">java</string>
+    <string name="name_attention">Please Enter your name !</string>
+</resources>
